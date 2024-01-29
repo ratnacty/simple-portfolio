@@ -1,0 +1,198 @@
+/* Reset and base styles */
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1c1c1c, #474747);
+  color: white;
+  
+}
+
+/* Header styles */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1em;
+  position: fixed;
+  top: 0; /* Adjusted to start from the top of the page */
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  margin-left: 35px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 30px;
+}
+
+nav li {
+  margin-right: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Main content container */
+.container {
+  max-width: 800px;
+  margin: 30px auto; /* Revert margin to 20px and center the content */
+  padding: 20px;
+}
+
+/* Name section styles */
+.name-section {
+  text-align: center;
+  padding: 90px 0;
+  color: #fff;
+  padding-top: 10rem;
+  
+}
+
+.name-section h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.name-section p {
+  font-size: 1.5em;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.job-title {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* About section styles */
+.about-section {
+  text-align: center;
+  padding: 50px 0;
+}
+.about-section img{
+  margin-bottom: 20px;
+}
+
+.about-section h2,
+.skills-section h2,
+.contact-section h2,
+.projects-section h2 {
+  margin-bottom: 20px;
+}
+
+/* Skills section styles */
+.skills-section{
+  background: linear-gradient(135deg, #535151, #584b11);
+  margin-bottom: 20px;
+}
+.skills-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-section li {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
+/* Projects section styles */
+.projects-section {
+  text-align: center;
+  color: white;
+  padding: 50px 0;
+}
+
+.project {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  transition: background-color 0.3s ease; /* Adding transition for smoother color change */
+
+}
+
+.project:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Change to your desired hover color */
+}
+
+
+.project h3 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+/* Contact section styles */
+.contact-section {
+  background: linear-gradient(135deg, #535151, #584b11);
+  color: white;
+  padding: 40px 20px; /* Add padding to the top and bottom */
+  text-align: center;
+  margin-bottom: 130px; /* Increase margin to create space above the footer */
+}
+
+.contact-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px; /* Add margin to the bottom of the text */
+}
+
+
+/* Footer styles */
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
